@@ -14,8 +14,8 @@
   <tbody>
     <% @cassettes.each do |cassette| %>
       <tr>
-        <td><%= cassette.movie %></td>
-        <td><%= cassette.formato %></td>
+        <td><%= cassette.movie.name %></td>
+        <td><%= cassette.formato.name %></td>
         <td><%= link_to 'Show', cassette %></td>
         <td><%= link_to 'Edit', edit_cassette_path(cassette) %></td>
         <td><%= link_to 'Destroy', cassette, method: :delete, data: { confirm: 'Are you sure?' } %></td>

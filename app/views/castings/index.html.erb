@@ -14,8 +14,8 @@
   <tbody>
     <% @castings.each do |casting| %>
       <tr>
-        <td><%= casting.actor %></td>
-        <td><%= casting.movie %></td>
+        <td><%= casting.actor.name %></td>
+        <td><%= casting.movie.name %></td>
         <td><%= link_to 'Show', casting %></td>
         <td><%= link_to 'Edit', edit_casting_path(casting) %></td>
         <td><%= link_to 'Destroy', casting, method: :delete, data: { confirm: 'Are you sure?' } %></td>

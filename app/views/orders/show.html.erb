@@ -12,12 +12,12 @@
 
 <p>
   <strong>Cassette:</strong>
-  <%= @order.cassette %>
+  <%= @order.cassette.movie.name %>
 </p>
 
 <p>
   <strong>Member:</strong>
-  <%= @order.member %>
+  <%= @order.member.name %>
 </p>
 
 <%= link_to 'Edit', edit_order_path(@order) %> |

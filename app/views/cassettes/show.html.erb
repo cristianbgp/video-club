@@ -2,12 +2,12 @@
 
 <p>
   <strong>Movie:</strong>
-  <%= @cassette.movie %>
+  <%= @cassette.movie.name %>
 </p>
 
 <p>
   <strong>Formato:</strong>
-  <%= @cassette.formato %>
+  <%= @cassette.formato.name %>
 </p>
 
 <%= link_to 'Edit', edit_cassette_path(@cassette) %> |
