@@ -1,6 +1,10 @@
-# README
+# Video Club
 
-Database creation
+![ERD](/Video-Club.png)
+
+## Database creation
+
+I generate these scaffolds
 
 `rails generate scaffold Member name:string phone:string address:string`
 
@@ -17,3 +21,10 @@ Database creation
 `rails generate scaffold Cassette movie:references formato:references`
 
 `rails generate scaffold Order start_date:datetime end_date:datetime cassette:references member:references`
+
+## Usage
+
+Just
+
+    rails db:migrate
+    rails db:seed
