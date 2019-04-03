@@ -24,6 +24,10 @@ I generate these scaffolds
 
 ## Usage
 
+Previous steps
+
+    bundle install
+
 Just
 
     rails db:migrate
